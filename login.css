@@ -88,6 +88,7 @@ body {
   font-weight: 400;
   letter-spacing: -.021em;
   padding-left: 15px;
+  padding-right: 15px;
 }
 
 .login-container .login-data .fade-in-container form input:focus {
@@ -97,7 +98,7 @@ body {
 .login-container .login-data .fade-in-container form .login {
   position: absolute;
   top: 8px;
-  right: 15px;
+  right: 5px;
   background-image: url("./images/login.png");
   background-size: cover;
   background-repeat: no-repeat;
