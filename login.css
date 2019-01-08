@@ -1,0 +1,222 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'SFNSText', 'Helvetica Neue', sans-serif;
+}
+
+/* Main div container */
+.login-container {
+  background-image: url("./images/bg.jpg");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Spinner */
+.login-container .loading {
+  background: url("./images/load.gif") no-repeat center center;
+  height: 55px;
+  width: 55px;
+  background-size: cover;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+/* Login */
+.login-container .login-data {
+  display: none;
+}
+
+.login-container .login-data h1 {
+  padding: 0px;
+  margin: 0px;
+  color: #fff;
+  margin-left: 15px;
+  font-size: 20px;
+  padding-top: 15px;
+  font-weight: 400;
+}
+
+.login-container .login-data .fade-in-container img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 120px;
+  height: 100px;
+  border-radius: 20px;
+}
+
+.login-container .login-data .fade-in-container h2 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+  line-height: 1.38105;
+  letter-spacing: .011em;
+  max-width: 380px;
+  display: block;
+  margin: 0 auto;
+  word-break: break-word;
+  font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.login-container .login-data .fade-in-container form {
+  height: 120px;
+  width: 320px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+.login-container .login-data .fade-in-container form input {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  box-shadow: none;
+  height: 42px;
+  border: 0;
+  border-radius: 6px;
+  border-color: transparent;
+  width: 300px;
+  color: #494949;
+  font-size: 17px;
+  line-height: 1.29412;
+  font-weight: 400;
+  letter-spacing: -.021em;
+  padding-left: 15px;
+}
+
+.login-container .login-data .fade-in-container form input:focus {
+  outline: 0;
+}
+
+.login-container .login-data .fade-in-container form .login {
+  position: absolute;
+  top: 8px;
+  right: 15px;
+  background-image: url("./images/login.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  height: 30px;
+  text-indent: -9999px;
+  width: 30px;
+}
+
+.login-container .login-data .fade-in-container .remember-password {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.login-container .login-data .fade-in-container .remember-password a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.login-container .login-data .fade-in-container .forgot-password {
+  margin: 0 auto;
+  width: 240px;
+  height: 80px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.login-container .login-data .fade-in-container .forgot-password .separator {
+  background-image: url("https://appleid.cdn-apple.com/appleauth/static/bin/cb4257665051/dist/assets/images/HR_gradient_light.png");
+  width: 100%;
+  max-width: 328px;
+  margin: auto;
+  height: 1px;
+  background-size: cover;
+  margin-bottom: 10px;
+}
+
+.login-container .login-data .fade-in-container .forgot-password a {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+/* Footer */
+.login-container .footer-contents {
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
+  width: 100%;
+  text-align: right;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 200;
+  padding-right: 10px;
+}
+
+.login-container .footer-contents .logo {
+  position: absolute;
+  bottom: 0px;
+  left: 30px;
+  border: 0px none;
+  background-image: url("https://icloud.cdn-apple.com/system/cloudos/1822Hotfix4/cloudos_foundation/language/1822Hotfix4/es-mx/stylesheet-1.png");
+  background-position: -275px -60px;
+  background-repeat: no-repeat;
+  display: block;
+  height: 30px;
+  text-indent: -9999px;
+  width: 30px;
+}
+
+.login-container .footer-contents .links a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 18px;
+}
+
+/* Animation to show the login form */
+.login-data {
+  animation: fadein 2s;
+  -moz-animation: fadein 2s; /* Firefox */
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+  -o-animation: fadein 2s; /* Opera */
+}
+
+@keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+
+@-moz-keyframes fadein { /* Firefox */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+
+@-webkit-keyframes fadein { /* Safari and Chrome */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+
+@-o-keyframes fadein { /* Opera */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity: 1;
+  }
+}

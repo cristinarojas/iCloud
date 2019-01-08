@@ -1,0 +1,162 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'SFNSText', 'Helvetica Neue', sans-serif;
+}
+
+/* Main div container of app page */
+.app-container {
+  background-image: url("./images/bg.jpg");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Spinner */
+.app-container .loading {
+  background: url("./images/load.gif") no-repeat center center;
+  height: 55px;
+  width: 55px;
+  background-size: cover;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+/* Container data app */
+.app-container .app-data {
+  display: none;
+}
+
+.app-container .app-data .header h1 {
+  padding: 0px;
+  margin: 0px;
+  color: #fff;
+  margin-left: 15px;
+  font-size: 20px;
+  padding-top: 15px;
+  font-weight: 400;
+  display: inline-block;
+}
+
+.user-in {
+  width: 190px;
+  height: 180px;
+  position: relative;
+  float: right;
+}
+
+.app-container  .app-data .header .user-in img {
+  padding: 0px;
+  margin: 0px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  margin-top: 10px;
+}
+
+.app-container  .app-data .header .user-in span {
+  padding: 0px;
+  margin: 0px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  float: right;
+  margin-right: 20px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.user-in .container-options {
+  height: 65px;
+  width: 160px;
+  background-color: transparent;
+  position: absolute;
+  margin-top: 40px;
+  display: none;
+  color: #585858;
+  font-size: 14px;
+  font-weight: 300;
+  margin: 0 auto;
+  top: 50px;
+  left: 15px;
+}
+
+.app-container  .app-data .header .user-in .container-options .triangle {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid white;
+  margin: 0 auto;
+}
+
+.app-container  .app-data .header .user-in .container-options .options {
+  height: 65px;
+  width: 160px;
+  background-color: #fff;
+}
+
+.app-container  .app-data .header .user-in .options ul {
+  list-style: none;
+  margin-top: 0px;
+  padding: 0px;
+}
+
+.app-container  .app-data .header .user-in .options ul li {
+  cursor: default;
+  height: 30px;
+  line-height: 25px;
+  padding-left: 10px;
+}
+
+.app-container  .app-data .header .user-in .options ul li:hover {
+  background-color: #dff3ff;
+}
+
+.app-container  .app-data .header .user-in .show {
+  display: block;
+}
+
+.app-container .app-data .fade-in-container {
+  width: 75%;
+  height: 500px;
+  -webkit-animation: expand 5s;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.app-container .app-data .fade-in-container .icon {
+  width: 145px;
+  height: 200px;
+  text-align: center;
+  color: #fff;
+  display: inline-block;
+  margin: 15px;
+}
+
+.app-container .app-data .fade-in-container .icon:hover {
+  cursor: pointer;
+}
+
+.app-container .app-data .fade-in-container .icon img {
+  width: 142px;
+  height: 142px;
+}
+
+.app-container .app-data .fade-in-container .icon span {
+  pointer-events: all;
+  cursor: pointer;
+  text-shadow: #000 0 0 25px;
+  padding-top: 15px;
+  display: block;
+  font-weight: 300;
+}
+
+/* Animation to show items on app */
+@-webkit-keyframes expand {
+    0% { height: 200px }
+    100% { height: 500px }
+}
